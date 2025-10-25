@@ -1,0 +1,116 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #ece9e6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+header {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px 0;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-card {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  padding: 30px 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.category-card:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.05);
+}
+
+/* Experiment list page styles */
+.experiment-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.experiment-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.experiment-card:hover {
+  transform: scale(1.05);
+}
+
+.experiment-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Experiment detail page styles */
+#experiment-detail {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+#experiment-detail h2 {
+  margin-top: 0;
+}
+
+button.back {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button.back:hover {
+  background: rgba(255,255,255,0.4);
+}
